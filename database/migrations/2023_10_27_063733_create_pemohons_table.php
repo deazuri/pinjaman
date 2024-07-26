@@ -13,11 +13,12 @@ return new class extends Migration {
     public function up()
     {
         Schema::create('pemohons', function (Blueprint $table) {
-            $table->bigIncrements('kode');
-            $table->string('nama_pemohon', 7);
-            $table->string('usia', 30);
-            $table->string('alamat', 50);
+            $table->bigIncrements('id');
+            $table->string('nama_pemohon');
+            $table->string('usia');
+            $table->string('alamat');
             $table->timestamps();
+    
         });
     }
 

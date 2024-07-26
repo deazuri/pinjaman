@@ -18,12 +18,21 @@
         class="fas fa-bars"></i></a>
     </li>
     <li class="nav-item d-none d-sm-inline-block">
-    <a href="index3.html" class="nav-link">Home</a>
+    <a href="/spk" class="nav-link">Info</a>
     </li>
     <li class="nav-item d-none d-sm-inline-block">
-    <a href="#" class="nav-link">Contact</a>
+    <a href="/profile" class="nav-link">Profile</a>
     </li>
     </ul>
+    <div class="col-sm-6">
+                    <form action="/logout" method="POST">
+                        @csrf
+                        <button type="submit" class="btn btn-outline-secondary btn-sm"> 
+                            <i class="fas fa-sign-out-alt"></i> Logout
+                        </button>
+                    </form>
+            </div><!-- /.col -->
+    
 
     <!-- Right navbar links -->
     <ul class="navbar-nav ml-auto">
@@ -43,11 +52,11 @@
         </div>
         </div> </form> </div>
 </li> <!-- Messages Dropdown Menu -->
-<li class="nav-item dropdown"> <a class="nav-link" data-toggle="dropdown" href="#"> <i class="far fa-comments"></i>
+<!-- <li class="nav-item dropdown"> <a class="nav-link" data-toggle="dropdown" href="#"> <i class="far fa-comments"></i>
 <span class="badge badge-danger navbar-badge">3</span>
-</a> <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right"> <a href="#" class="dropdown-item">
+</a> <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right"> <a href="#" class="dropdown-item"> -->
 <!-- Message Start -->
-<div class="media">
+<!-- <div class="media">
     <img src="{{asset('template/dist/img/user1-128x128.jpg')}}" alt="User Avatar" class="img-size-50 mr-3
     img-circle"> <div class="media-body"> <h3 class="dropdown-item-title">
     Brad Diesel
@@ -56,13 +65,13 @@
     <p class="text-sm">Call me whenever you can...</p>
     <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
     </div>
-</div>
+</div> -->
 <!-- Message End -->
-</a>
-<div class="dropdown-divider"></div>
-<a href="#" class="dropdown-item">
+<!-- </a> -->
+<!-- <div class="dropdown-divider"></div>
+<a href="#" class="dropdown-item"> -->
     <!-- Message Start -->
-    <div class="media">
+    <!-- <div class="media">
         <img src="{{asset('template/dist/img/user8-128x128.jpg')}}" alt="User Avatar"
             class="img-size-50 img-circle mr-3">
         <div class="media-body">
@@ -73,13 +82,13 @@
             <p class="text-sm">I got your message bro</p>
             <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
         </div>
-    </div>
+    </div> -->
     <!-- Message End -->
-</a>
+<!-- </a>
 <div class="dropdown-divider"></div>
-<a href="#" class="dropdown-item">
+<a href="#" class="dropdown-item"> -->
     <!-- Message Start -->
-    <div class="media">
+    <!-- <div class="media">
         <img src="{{asset('template/dist/img/user3-128x128.jpg')}}" alt="User Avatar"
             class="img-size-50 img-circle mr-3">
         <div class="media-body">
@@ -90,15 +99,15 @@
             <p class="text-sm">The subject goes here</p>
             <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
         </div>
-    </div>
+    </div> -->
     <!-- Message End -->
-</a>
+<!-- </a>
 <div class="dropdown-divider"></div>
 <a href="#" class="dropdown-item dropdown-footer">See All Messages</a>
 </div>
-</li>
+</li> -->
 <!-- Notifications Dropdown Menu -->
-<li class="nav-item dropdown">
+<!-- <li class="nav-item dropdown">
     <a class="nav-link" data-toggle="dropdown" href="#">
         <i class="far fa-bell"></i>
         <span class="badge badge-warning navbar-badge">15</span>
@@ -123,7 +132,7 @@
         <div class="dropdown-divider"></div>
         <a href="#" class="dropdown-item dropdown-footer">See All Notifications</a>
     </div>
-</li>
+</li> -->
 <li class="nav-item">
     <a class="nav-link" data-widget="fullscreen" href="#" role="button">
         <i class="fas fa-expand-arrows-alt"></i>
@@ -141,7 +150,7 @@
 <!-- Main Sidebar Container -->
 <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
-    <a href="index2.html" class="brand-link">
+    <a href="/koperasi" class="brand-link">
         <img src="{{asset('template/dist/img/logokoperasi.png')}}" alt="AdminLTE Logo"
             class="brand-image img-circle elevation-3" style="opacity: .8">
         <span class="brand-text font-weight-light" style="font-size: 14px;">Koperasi Kembang Arum Ayu</span>
@@ -160,7 +169,7 @@
       </div> -->
 
         <!-- SidebarSearch Form -->
-        <div class="form-inline">
+        <!-- <div class="form-inline">
             <div class="input-group" data-widget="sidebar-search">
                 <input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search">
                 <div class="input-group-append">
@@ -169,15 +178,15 @@
                     </button>
                 </div>
             </div>
-        </div>
+        </div> -->
 
         <!-- Sidebar Menu -->
         <nav class="mt-2">
             <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
                 <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
-                <li class="nav-item menu-open">
-                    <a href="#" class="nav-link active">
+                <li class="nav-item">
+                    <a href="/welcome" class="nav-link">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                             class="bi bi-speedometer2" viewBox="0 0 16 16">
                             <path
@@ -186,12 +195,12 @@
                                 d="M0 10a8 8 0 1 1 15.547 2.661c-.442 1.253-1.845 1.602-2.932 1.25C11.309 13.488 9.475 13 8 13c-1.474 0-3.31.488-4.615.911-1.087.352-2.49.003-2.932-1.25A7.988 7.988 0 0 1 0 10zm8-7a7 7 0 0 0-6.603 9.329c.203.575.923.876 1.68.63C4.397 12.533 6.358 12 8 12s3.604.532 4.923.96c.757.245 1.477-.056 1.68-.631A7 7 0 0 0 8 3z" />
                         </svg>
                         <p>
-                            Dashboard - Home
+                            Dashboard
                         </p>
                     </a>
-
+                @can('Data Pemohon')
                 <li class="nav-item">
-                    <a href="/pemohon" class="nav-link">
+                    <a href="/data_pemohon" class="nav-link">
                         <i class="bi bi-person-circle"></i>
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
                             class="bi bi-person-circle" viewBox="0 0 16 16">
@@ -204,15 +213,101 @@
                         </p>
                     </a>
                 </li>
+                @endcan
 
+                <!-- <li class="nav-item">
+                    <a href="/data_tabel_kriteria" class="nav-link">
+                        <i class="bi bi-person-circle"></i>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                            class="bi bi-person-circle" viewBox="0 0 16 16">
+                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                            <path fill-rule="evenodd"
+                                d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+                        </svg>
+                        <p>
+                            Tabel Kriteria
+                        </p>
+                    </a>
+                </li> -->
+                @can('Tabel Kriteria')
                 <li class="nav-item">
                     <a href="/kriteria" class="nav-link">
+                        <i class="bi bi-person-circle"></i>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                            class="bi bi-person-circle" viewBox="0 0 16 16">
+                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                            <path fill-rule="evenodd"
+                                d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+                        </svg>
+                        <p>
+                           Tabel Kriteria 
+                        </p>
+                    </a>
+                </li>
+                @endcan
+
+                <!-- <li class="nav-item">
+                    <a href="/bobot" class="nav-link">
+                        <i class="bi bi-person-circle"></i>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                            class="bi bi-person-circle" viewBox="0 0 16 16">
+                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                            <path fill-rule="evenodd"
+                                d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+                        </svg>
+                        <p>
+                            Bobot 
+                        </p>
+                    </a>
+                </li> -->
+
+                @can('Data Kriteria')
+                <li class="nav-item">
+                    <a href="/data_kriteria" class="nav-link">
                         <i class="fas fa-users"></i>
                         <p>
                             Data Kriteria
                         </p>
                     </a>
                 </li>
+                @endcan
+
+                <!-- <li class="nav-item">
+                    <a href="/jaminan" class="nav-link">
+                        <i class="fas fa-users"></i>
+                        <p>
+                            Data Jaminan
+                        </p>
+                    </a>
+                </li> -->
+
+                
+                <!-- <li class="nav-item">
+                    <a href="/datakriteria" class="nav-link">
+                        <i class="bi bi-person-circle"></i>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                            class="bi bi-person-circle" viewBox="0 0 16 16">
+                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                            <path fill-rule="evenodd"
+                                d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+                        </svg>
+                        <p>
+                            Tabel Kriteria 
+                        </p>
+                    </a>
+                </li> -->
+
+              
+                <!-- <li class="nav-item">
+                    <a href="/data_alternatif" class="nav-link">
+                        <i class="fas fa-users"></i>
+                        <p>
+                            Data Alternatif
+                        </p>
+                    </a>
+                </li> -->
+
+                
 
 
                 <!-- <li class="nav-item">
@@ -228,8 +323,8 @@
             </a>
           </li> -->
 
-                <li class="nav-item">
-                    <a href="pages/widgets.html" class="nav-link">
+                <!-- <li class="nav-item">
+                    <a href="/nilai_matriks" class="nav-link">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                             class="bi bi-graph-up" viewBox="0 0 16 16">
                             <path fill-rule="evenodd"
@@ -239,7 +334,31 @@
                             Perhitungan
                         </p>
                     </a>
+                </li> -->
+
+                @can('Hasil Perhitungan') 
+                <li class="nav-item">
+                    <a href="/matriks_ternormalisasi" class="nav-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-graph-up" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M0 0h1v15h15v1H0V0Zm14.817 3.113a.5.5 0 0 1 .07.704l-4.5 5.5a.5.5 0 0 1-.74.037L7.06 6.767l-3.656 5.027a.5.5 0 0 1-.808-.588l4-5.5a.5.5 0 0 1 .758-.06l2.609 2.61 4.15-5.073a.5.5 0 0 1 .704-.07Z" />
+                        </svg>
+                        <p>
+                            Hasil Perhitungan
+                        </p>
+                    </a>
                 </li>
+                @endcan
+
+                <!-- <li class="nav-item">
+                    <a href="/" class="nav-link">
+                        <i class="fas fa-sign-out-alt"></i>
+                        <p>
+                            Logout
+                        </p>
+                    </a>
+                </li> -->
 
 
                 <!-- /.sidebar-menu -->
@@ -259,7 +378,7 @@
 
 <!-- Main Footer -->
 <footer class="main-footer">
-    <strong>Copyright &copy; 2023 <a href="https://adminlte.io">Koperasi Kembang Arum Ayu</a>.</strong>
+    <strong>Copyright &copy; 2023 <a href="">Koperasi Kembang Arum Ayu</a>.</strong>
     All rights reserved.
     <div class="float-right d-none d-sm-inline-block">
         <b>Version</b> 3.2.0

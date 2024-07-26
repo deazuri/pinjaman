@@ -4,7 +4,7 @@
     <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
     <li class="nav-item menu-open">
-      <a href="#" class="nav-link active">
+      <a href="/" class="nav-link active">
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-speedometer2"
           viewBox="0 0 16 16">
           <path
@@ -18,7 +18,7 @@
       </a>
 
     <li class="nav-item">
-      <a href="pages/widgets.html" class="nav-link">
+      <a href="/data_pemohon" class="nav-link">
         <i class="bi bi-person-circle"></i>
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person-circle"
           viewBox="0 0 16 16">
@@ -33,7 +33,16 @@
     </li>
 
     <li class="nav-item">
-      <a href="pages/widgets.html" class="nav-link">
+      <a href="/data_tabel_kriteria" class="nav-link">
+        <i class="fas fa-users"></i>
+        <p>
+          Tabel Kriteria
+        </p>
+      </a>
+    </li>
+
+    <li class="nav-item">
+      <a href="/data_kriteria" class="nav-link">
         <i class="fas fa-users"></i>
         <p>
           Data Kriteria
@@ -67,6 +76,15 @@
         </p>
       </a>
     </li>
+
+    <li class="nav-item">
+                    <a href="/" class="nav-link">
+                        <i class="fas fa-sign-out-alt"></i>
+                        <p>
+                            Logout
+                        </p>
+                    </a>
+                </li>
 
 
     <!-- /.sidebar-menu -->
